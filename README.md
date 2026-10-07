@@ -16,6 +16,7 @@ sudo arp-scan -l
 
 ```
 
+<img width="1920" height="856" alt="netdiscovery" src="https://github.com/user-attachments/assets/2f34cf5a-32f1-4a73-b3ee-5c6edfae06e1" />
 
 *Figure 1: `arp-scan` output identifying the target IP address `10.0.2.5`.*
 
@@ -30,6 +31,7 @@ sudo nmap -p- -sS -sV -sC 10.0.2.5
 
 ```
 
+<img width="1920" height="856" alt="nmap-scan" src="https://github.com/user-attachments/assets/2a90a142-1989-448b-9c30-bf8732fcfccb" />
 
 *Figure 2: Nmap results revealing active services: SSH (22), HTTP (80), Samba/NetBIOS (139), and HTTPS (443).*
 
@@ -44,6 +46,7 @@ sudo nmap -p- -sS -sV -sC 10.0.2.5
 
 Visiting the target's IP address (`http://10.0.2.5/`) via browser confirmed a standard Apache web server installation page.
 
+<img width="1922" height="858" alt="webpage" src="https://github.com/user-attachments/assets/94e6cc16-b365-4f9c-80e8-427af96e26ce" />
 
 *Figure 3: Default Apache landing page.*
 
@@ -59,6 +62,7 @@ msf6 > search samba
 
 ```
 
+<img width="1920" height="856" alt="use-metaploit" src="https://github.com/user-attachments/assets/3a8afc9d-c3f4-4e51-bf40-90013276d1bf" />
 
 *Figure 4: Locating the `exploit/linux/samba/trans2open` module.*
 
@@ -78,6 +82,7 @@ run
 
 ```
 
+<img width="1920" height="856" alt="exploit" src="https://github.com/user-attachments/assets/9f76a971-13c8-4c6e-a18b-1bde249a0add" />
 
 *Figure 5: Setting exploit targets, payload, and listener options.*
 
@@ -96,6 +101,7 @@ pwd
 
 ```
 
+<img width="1920" height="856" alt="hacked" src="https://github.com/user-attachments/assets/000f2a2d-5432-434d-be9b-ef396b26577d" />
 
 *Figure 6: Interactive root shell session established on the target.*
 
